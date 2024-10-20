@@ -4,6 +4,7 @@
  */
 package prodigy_sd_01;
 
+import javax.swing.JOptionPane;
 import raven.toast.Notifications;
 
 /**
@@ -170,7 +171,7 @@ public class Interface extends javax.swing.JFrame {
                 double f = (c * 1.8 + 32);
                 jTextField2.setText(String.valueOf(f));
             } catch (NumberFormatException e) {
-//                jTextField3.setText("Invalid input. Please enter a number.");
+                JOptionPane.showMessageDialog(this, "Please Enter a number!");
             }
         }
 
@@ -181,7 +182,7 @@ public class Interface extends javax.swing.JFrame {
                 double k = (c + 273.15);
                 jTextField2.setText(String.valueOf(k));
             } catch (NumberFormatException e) {
-//                jTextField3.setText("Invalid input. Please enter a number.");
+              JOptionPane.showMessageDialog(this, "Please Enter a number!");
             }
         }
 
@@ -191,7 +192,7 @@ public class Interface extends javax.swing.JFrame {
                 double c = Double.parseDouble(jTextField1.getText());
                 jTextField2.setText(String.valueOf(c));
             } catch (NumberFormatException e) {
-//                jTextField3.setText("Invalid input. Please enter a number.");
+               JOptionPane.showMessageDialog(this, "Please Enter a number!");
             }
         }
 
@@ -202,7 +203,7 @@ public class Interface extends javax.swing.JFrame {
                 double c = (f - 32) * 5 / 9;
                 jTextField2.setText(String.valueOf(c));
             } catch (NumberFormatException e) {
-//                jTextField3.setText("Invalid input. Please enter a number.");
+JOptionPane.showMessageDialog(this, "Please Enter a number!");
             }
         } else if (box1.equals("Fahrenheit") && box2.equals("Kelvin")) {
             try {
@@ -217,7 +218,7 @@ public class Interface extends javax.swing.JFrame {
                 double f = Double.parseDouble(jTextField1.getText());
                 jTextField2.setText(String.valueOf(f));
             } catch (NumberFormatException e) {
-//                jTextField3.setText("Invalid input. Please enter a number.");
+JOptionPane.showMessageDialog(this, "Please Enter a number!");
             }
         }
 
@@ -228,7 +229,7 @@ public class Interface extends javax.swing.JFrame {
                 double c = (k - 273.15);
                 jTextField2.setText(String.valueOf(c));
             } catch (NumberFormatException e) {
-//                jTextField3.setText("Invalid input. Please enter a number.");
+JOptionPane.showMessageDialog(this, "Please Enter a number!");
             }
         } else if (box1.equals("Kelvin") && box2.equals("Fahrenheit")) {
             try {
@@ -236,14 +237,14 @@ public class Interface extends javax.swing.JFrame {
                 double f = (k - 273.15) * 9 / 5 + 32;
                 jTextField2.setText(String.valueOf(f));
             } catch (NumberFormatException e) {
-//                jTextField3.setText("Invalid input. Please enter a number.");
+JOptionPane.showMessageDialog(this, "Please Enter a number!");
             }
         } else if (box1.equals("Kelvin") && box2.equals("Kelvin")) {
             try {
                 double k = Double.parseDouble(jTextField1.getText());
                 jTextField2.setText(String.valueOf(k));
             } catch (NumberFormatException e) {
-//                jTextField3.setText("Invalid input. Please enter a number.");
+JOptionPane.showMessageDialog(this, "Please Enter a number!");
             }
         }
 

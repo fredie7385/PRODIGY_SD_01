@@ -1,11 +1,7 @@
 package org.prodigy_sd_01;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 public class Controller {
@@ -95,9 +91,11 @@ public class Controller {
         inputUnit.setValue("Celsius");
         inputTemperature.requestFocus();
     }
+
     private void clearInputPutTextField() {
         inputTemperature.setText("");
     }
+
     private void clearOutputLabels() {
         celsiusLabel.setText("°C : ");
         fahrenheitLabel.setText("°F : ");

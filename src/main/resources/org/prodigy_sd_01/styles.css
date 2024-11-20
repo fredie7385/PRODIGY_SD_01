@@ -18,7 +18,7 @@
 }
 
 .button {
-    -fx-background-color: #4CAF50; /* Green background */
+    -fx-background-color: #79acd4; /* Green background */
     -fx-text-fill: white;
     -fx-font-size: 16px;
     -fx-padding: 10px;
@@ -26,5 +26,20 @@
 }
 
 .button:hover {
-    -fx-background-color: #45a049; /* Darker green */
+    -fx-background-color: #345f80; /* Darker green */
+}
+#exitButton{
+-fx-background-color: #7d332e;
+}
+
+#exitButton:hover {
+    -fx-background-color: #3b1714; /* Darker green */
+}
+
+#clearButton {
+    -fx-background-color:#3d5241;
+}
+
+#clearButton:hover {
+    -fx-background-color: #203624; /* Darker green */
 }
